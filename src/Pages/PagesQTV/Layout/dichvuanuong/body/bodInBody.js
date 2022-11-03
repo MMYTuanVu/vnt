@@ -1,0 +1,64 @@
+import SpanButton from '~/components/wrapper/button/ButtonSpan';
+function BodyInBody({ data }) {
+  return (
+    <>
+      <SpanButton
+        backgroundColor="var(--backGround-color-light)"
+        border
+        title={data.china_name}
+        width="200px"
+        height="23px"
+        borderColor="var(--border-color1)"
+        fontSize="1.3rem"
+        color="var(--text-color-light)"
+        z_index="9"
+      />
+      <SpanButton
+        backgroundColor="var(--backGround-color-light)"
+        border
+        title={data.city}
+        width="120px"
+        height="23px"
+        borderColor="var(--border-color1)"
+        fontSize="1.3rem"
+        color="var(--text-color-light)"
+        z_index="9"
+      />
+      <SpanButton
+        backgroundColor="var(--backGround-color-light)"
+        border
+        title={data.note}
+        width="240px"
+        height="23px"
+        borderColor="var(--border-color1)"
+        fontSize="1.3rem"
+        color="var(--text-color-light)"
+        z_index="9"
+      />
+      <SpanButton
+        backgroundColor="var(--backGround-color-light)"
+        border
+        title={data.gia_ngay_thuong}
+        width="120px"
+        height="23px"
+        borderColor="var(--border-color1)"
+        fontSize="1.3rem"
+        color="var(--text-color-light)"
+        z_index="9"
+      />
+      <SpanButton
+        backgroundColor="var(--backGround-color-light)"
+        border
+        title={data.gia_ngay_le}
+        width="120px"
+        height="23px"
+        borderColor="var(--border-color1)"
+        fontSize="1.3rem"
+        color="var(--text-color-light)"
+        z_index="9"
+      />
+    </>
+  );
+}
+
+export default BodyInBody;

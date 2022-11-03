@@ -1,0 +1,78 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  height: 32px;
+  margin: 4px 12px 0 0;
+}
+.right_nab {
+  border: 1px solid var(--backGround-color-light);
+  box-shadow: 0 2px 2px 1px var(--hover-default-color);
+  background-color: var(--backGround-color-light);
+  border-radius: 4px;
+  width: 300px;
+  height: 240px;
+  margin-top: -10px;
+  .hotel_country {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .hotel_country_span {
+      font-size: 1.3rem;
+      margin-top: 10px;
+      margin-left: 5px;
+    }
+    .hotel_country_body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .hotel_pressent {
+    display: flex;
+    align-items: center;
+    margin: 10px 11px 0 5px;
+    justify-content: space-between;
+    .hotel_pressent_span {
+      font-size: 1.3rem;
+    }
+  }
+  .hotel_pages {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 5px;
+    justify-content: space-between;
+    .hotel_pages_span {
+      font-size: 1.3rem;
+    }
+    .hotel_pages_body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .hotel_pages_input {
+        border: 1px solid var(--hover-default-color);
+        width: 90px;
+        height: 27px;
+        margin-right: 4px;
+      }
+      .hotel_pages_body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 27px;
+        width: 48px;
+        margin-right: 16px;
+        margin-left: 4px;
+        border-radius: 4px;
+        border: 1px solid var(--hover-default-color);
+        background-color: var(--default-color);
+        &:hover {
+          background-color: var(--hover-default-color);
+        }
+        &:active {
+          background-color: var(--hover-default-color);
+        }
+      }
+    }
+  }
+}

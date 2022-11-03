@@ -1,0 +1,50 @@
+.wrapper {
+  display: flex;
+  justify-content: left;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.left_hideRight {
+  justify-content: left;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+}
+.left_showRight {
+  justify-content: left;
+  align-items: flex-start;
+  height: 100%;
+}
+.right {
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+  height: 100%;
+}
+.next_button {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 650px) {
+  .left_mobile {
+    display: none;
+    width: 0px;
+  }
+  .right_mobile {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 650px) {
+  .left_mobile {
+    display: flex;
+    width: calc(100% - 470px);
+  }
+  .right_mobile {
+    width: 470px;
+  }
+}

@@ -1,0 +1,127 @@
+.wrapper {
+  background-color: rgb(221, 218, 218);
+  width: 40%;
+  margin-top: 40px;
+  border-radius: 5px;
+  transition: all linear 0.2s;
+}
+@media only screen and (max-width: 739px) {
+  .mobile {
+    width: 95%;
+  }
+}
+@media only screen and (min-width: 740px) and (max-width: 1024px) {
+  .tablet {
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .destop {
+    width: 40%;
+  }
+}
+.wrapperMobile {
+  background-color: rgb(221, 218, 218);
+  width: 95%;
+  margin-top: 40px;
+  border-radius: 5px;
+}
+.title {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 5%;
+}
+.title-span {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.inputs {
+  margin-top: 40px;
+  width: 90%;
+  margin-left: 5%;
+  margin-bottom: 40px;
+}
+.input_div {
+  margin-top: 1rem;
+}
+.input {
+  width: 100%;
+  height: 3rem;
+  border-radius: 3px;
+  caret-color: red;
+  border: 1px solid transparent;
+  &.enable {
+    border-color: green;
+  }
+  &.disabled {
+    border-color: red;
+  }
+  &:focus {
+    border-color: #333;
+  }
+}
+.button {
+  width: 200px;
+  height: 3rem;
+  margin-left: 5%;
+  border-radius: 5px;
+}
+.button-btn {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 1.6rem;
+  &.active {
+    &:hover {
+      cursor: pointer;
+      opacity: 0.7;
+    }
+    background-color: red;
+    color: #fff;
+  }
+  &.disabled {
+    background-color: #666;
+  }
+  transition: all linear 0.2s;
+}
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 5% 2rem 5%;
+}
+.bottom-link {
+  display: flex;
+  font-size: 1.3rem;
+  color: #333;
+  &:hover {
+    text-decoration: underline;
+  }
+  &.fogot_infomation {
+    color: red;
+    padding: 0.3rem;
+    border-radius: 5px;
+  }
+}
+.error {
+  font-size: 1.2rem;
+  color: red;
+  display: none;
+  &.error_email {
+    display: flex;
+  }
+  &.error_password {
+    display: flex;
+  }
+}
+.title-span_error {
+  font-size: 1.2rem;
+  color: red;
+  margin-left: 30px;
+  margin-top: 5px;
+  &.block {
+    display: none;
+  }
+}

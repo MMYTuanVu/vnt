@@ -1,0 +1,13 @@
+.wrapper-tab {
+  display: flex;
+  justify-content: left;
+  align-items: flex-start;
+  flex-direction: column;
+  overflow: auto;
+  background-color: var(--backGround-color-light);
+  border-radius: 4px;
+  margin-top: -7px;
+  width: 500px;
+  max-height: 360px;
+  padding: 2px;
+}
